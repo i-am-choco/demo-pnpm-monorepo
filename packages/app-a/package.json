@@ -1,0 +1,39 @@
+{
+  "name": "app-a",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.46",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.29.4",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-node-externals": "^6.1.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
